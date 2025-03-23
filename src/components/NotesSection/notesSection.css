@@ -145,14 +145,15 @@
     display: block;
     cursor: pointer;
   }
+
   .timestamp span {
     font-size: 14px;
   }
+
   .notes-text {
     height: 270px;
     width: 90%;
     min-width: 328px;
-    flex-grow: 1;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
@@ -208,7 +209,7 @@
 
   .notes-section {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     overflow: hidden;
   }
