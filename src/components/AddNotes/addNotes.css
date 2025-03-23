@@ -1,0 +1,178 @@
+.create-group-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.input-div {
+  width: 740px;
+  height: 320px;
+  background-color: #ffffff;
+  border-radius: 9px;
+}
+
+.heading-close {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+}
+
+.group-input-div {
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.group-name {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.group-name-input {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid #cccccc;
+  border-radius: 22px;
+  display: flex;
+  flex-grow: 1;
+  font-size: 23px;
+  font-family: "Roboto", sans-serif;
+}
+
+.create-btn-div {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.create-btn {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #001f8b;
+  border: none;
+  border-radius: 11px;
+  width: 154px;
+  height: 38px;
+  cursor: pointer;
+}
+
+.heading {
+  font-size: 29px;
+  font-weight: 500;
+  color: black;
+}
+
+.group-label {
+  font-size: 27px;
+  font-weight: 500;
+  color: black;
+}
+
+.close-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.group-color {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.color-circle {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.color-input {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.color-circle.selected {
+  outline: 3px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 375px) and (max-width: 500px) {
+  .heading {
+    font-size: 18.5px;
+  }
+
+  .input-div {
+    width: 300px;
+    height: 211px;
+  }
+
+  .group-label {
+    font-size: 14.5px;
+  }
+
+  .color-circle {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+
+  .group-name-input {
+    width: 150px;
+    font-size: 10px;
+  }
+
+  .heading-close {
+    padding: 10px 15px;
+  }
+
+  .group-input-div {
+    padding: 10px 15px;
+    gap: 20px;
+  }
+
+  .group-name {
+    gap: 10px;
+  }
+
+  .create-btn-div {
+    justify-content: center;
+  }
+
+  .create-btn {
+    font-size: 17px;
+  }
+
+  .group-name-input {
+    padding: 5px;
+  }
+
+  .group-color {
+    gap: 10px;
+  }
+}
